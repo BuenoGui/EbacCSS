@@ -12,15 +12,6 @@ section {
     flex-wrap: wrap;
 }
 
-
-figure > img {
-    position: relative;
-    left: 5%;
-    height: 100%;
-    width: 100%;
-}
-
-
 figure {
     display: flex;
     align-items: center;
@@ -29,12 +20,22 @@ figure {
     width: 40%;
 }
 
+figure > img {
+    box-sizing: border-box;
+    object-fit: fill;
+    left: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+
 .text-content {
     background-color: rgba(26, 68, 68, 0.397); 
     position: absolute;
     height: 30%;
     width: 40%;
     display: flex;
+    opacity: 0;
 }
 
 .text-content > h2 {
@@ -51,4 +52,8 @@ figure {
     bottom: 25%;
     width: 80%;
     right: 10%;
+}
+
+.text-content:hover {
+    opacity: 1;
 }
