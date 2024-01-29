@@ -1,6 +1,6 @@
 body {
     position: absolute;
-    background-color: aquamarine;
+    background-color: rgba(120, 32, 138, 0.675);
     width: 100%;
     height: 100%;
     display: flex;
@@ -15,38 +15,40 @@ section {
 figure {
     display: flex;
     align-items: center;
-    margin: 3% 5%;
+    justify-content: center;
+    margin: 0.8% 5%;
     height: 40%;
     width: 40%;
 }
 
 figure > img {
-    box-sizing: border-box;
-    object-fit: fill;
     left: 5%;
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
 }
 
 
 .text-content {
-    background-color: rgba(26, 68, 68, 0.397); 
+    background-color: rgba(169, 190, 190, 0.447); 
     position: absolute;
-    height: 30%;
-    width: 40%;
+    justify-content: center;  /* alinha os textos <h2> e <p> no centro da figurecaption */
+    height: 46.5%;
+    width: 32%;
     display: flex;
     opacity: 0;
 }
 
 .text-content > h2 {
     position: absolute;
-    align-self: baseline;
-    font-size: 36px;
+    font-size: 56px;
     top: 10%;
-    right: 36%;
+    color: rgba(14, 231, 29, 0.826);
 }
 
 .text-content > p {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
     position: absolute;
     align-self: flex-end;
     bottom: 25%;
@@ -55,5 +57,7 @@ figure > img {
 }
 
 .text-content:hover {
+    transition: 1.3s;
     opacity: 1;
 }
+
