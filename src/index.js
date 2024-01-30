@@ -1,5 +1,21 @@
-let calma = document.getElementById("Calma");
+let Sensualidade = document.getElementById("Sensualidade");
+let felicidade = document.getElementById("felicidade");
+let dara = document.getElementById("dara");
+let paz = document.getElementById("paz");
 
-calma.addEventListener('click', function(){
-    window.location.href = "./html/calma.html";
+
+Sensualidade.addEventListener('click', function(){
+    window.location.href = "./html/Sensualidade.html";
+})
+
+felicidade.addEventListener('click', function(){
+    window.location.href = "./html/felicidade.html";
+})
+
+dara.addEventListener('click', function(){
+    window.location.href = "./html/dara.html";
+})
+
+paz.addEventListener('click', function(){
+    window.location.href = "./html/paz.html";
 })
